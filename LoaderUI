@@ -1,0 +1,97 @@
+local load = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local title1 = Instance.new("TextLabel")
+local load_2 = Instance.new("TextButton")
+local title2 = Instance.new("TextLabel")
+local text1 = Instance.new("TextLabel")
+local text2 = Instance.new("TextLabel")
+local text2_2 = Instance.new("TextLabel")load.Name = "load"
+load.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+load.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Frame.Parent = load
+Frame.BackgroundColor3 = Color3.fromRGB(17, 17, 17)
+Frame.BorderSizePixel = 0
+Frame.Position = UDim2.new(0.327205896, 0, 0.255020082, 0)
+Frame.Size = UDim2.new(0, 376, 0, 244)
+
+title1.Name = "title1"
+title1.Parent = Frame
+title1.BackgroundColor3 = Color3.fromRGB(27, 27, 27)
+title1.BorderSizePixel = 0
+title1.Size = UDim2.new(0, 376, 0, 51)
+title1.Font = Enum.Font.SourceSans
+title1.Text = "Overdrive V2 by Elliot/LuaE and Miles/GoYouToGames"
+title1.TextColor3 = Color3.fromRGB(255, 0, 0)
+title1.TextScaled = true
+title1.TextSize = 14.000
+title1.TextWrapped = true
+
+load_2.Name = "load"
+load_2.Parent = Frame
+load_2.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+load_2.BorderSizePixel = 0
+load_2.Position = UDim2.new(0.0558510646, 0, 0.229508221, 0)
+load_2.Size = UDim2.new(0, 334, 0, 52)
+load_2.Font = Enum.Font.SourceSans
+load_2.Text = "Load"
+load_2.TextColor3 = Color3.fromRGB(255, 0, 0)
+load_2.TextScaled = true
+load_2.TextSize = 14.000
+load_2.TextWrapped = true
+
+title2.Name = "title2"
+title2.Parent = Frame
+title2.BackgroundColor3 = Color3.fromRGB(27, 27, 27)
+title2.BorderSizePixel = 0
+title2.Position = UDim2.new(0, 0, 0.483606577, 0)
+title2.Size = UDim2.new(0, 376, 0, 29)
+title2.Font = Enum.Font.SourceSans
+title2.Text = "Changelog:"
+title2.TextColor3 = Color3.fromRGB(255, 0, 0)
+title2.TextScaled = true
+title2.TextSize = 14.000
+title2.TextWrapped = true
+
+text1.Name = "text1"
+text1.Parent = Frame
+text1.BackgroundColor3 = Color3.fromRGB(27, 27, 27)
+text1.BorderSizePixel = 0
+text1.Position = UDim2.new(0, 0, 0.602459073, 0)
+text1.Size = UDim2.new(0, 376, 0, 29)
+text1.Font = Enum.Font.SourceSans
+text1.Text = "-Fixed execution error"
+text1.TextColor3 = Color3.fromRGB(255, 0, 0)
+text1.TextScaled = true
+text1.TextSize = 14.000
+text1.TextWrapped = true
+
+text2.Name = "text2"
+text2.Parent = Frame
+text2.BackgroundColor3 = Color3.fromRGB(27, 27, 27)
+text2.BorderSizePixel = 0
+text2.Position = UDim2.new(0, 0, 0.72131151, 0)
+text2.Size = UDim2.new(0, 376, 0, 29)
+text2.Font = Enum.Font.SourceSans
+text2.Text = "-Improved UI"
+text2.TextColor3 = Color3.fromRGB(255, 0, 0)
+text2.TextScaled = true
+text2.TextSize = 14.000
+text2.TextWrapped = true
+
+text2_2.Name = "text3"
+text2_2.Parent = Frame
+text2_2.BackgroundColor3 = Color3.fromRGB(27, 27, 27)
+text2_2.BorderSizePixel = 0
+text2_2.Position = UDim2.new(0, 0, 0.840163946, 0)
+text2_2.Size = UDim2.new(0, 376, 0, 29)
+text2_2.Font = Enum.Font.SourceSans
+text2_2.Text = "-Added R15 to R6 converter"
+text2_2.TextColor3 = Color3.fromRGB(255, 0, 0)
+text2_2.TextScaled = true
+text2_2.TextSize = 14.000
+text2_2.TextWrapped = true
+
+load_2.MouseButton1Click:Connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/CyberCopLOL/ProjectOverdrive/main/database"))()
+end)
